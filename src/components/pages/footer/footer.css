@@ -1,0 +1,165 @@
+/* Style.css */
+
+footer {
+    background-color:  #F4F4F4;
+    ;
+    padding: 20px;
+    color: #333; 
+  }
+  
+  .newsletter {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 31%;
+    max-height: 258px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    
+  }
+  
+  .newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 70%;
+    margin-right: -5px;
+  }
+  
+  .newsletter button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: left;
+  }
+  
+  .footer-links > div {
+    width: 30%;
+  }
+  
+  .footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-media {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    
+    /* border-top: 1px solid #ccc; */
+    padding-top: 10px;
+  }
+
+  .list-unstyled li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-unstyled li i {
+    margin-right: 8px; 
+  }
+  .subscribe-btn{
+    background-color:  rgb(16, 138, 159) !important;
+    /* height: "156px"; */
+    
+  }
+
+
+  /* .contact-container {
+    background-color: #ffccff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contact-item span {
+    font-size: 16px;
+    
+    margin-left: 10px; 
+}
+
+.contact-item i {
+    margin-right: 10px;
+    font-size: 24px; 
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.social-media-icons label {
+    margin-right: 10px; 
+}
+.footer-bottom-container {
+  width: 100%;
+  background-color: white;
+}
+
+.footer-bottom {
+  padding: 1rem 0;
+}
+
+ 
+
+  
+
+  
+  

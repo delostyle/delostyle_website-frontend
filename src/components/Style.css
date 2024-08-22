@@ -1,0 +1,244 @@
+
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.delostyle-container {
+  font-family: 'Poppins';
+}
+
+.body {
+    font-family: 'Poppins';
+  }
+  
+
+.subscribe-section {
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    width: 50%;
+height: 100%;
+
+gap: 0px;
+opacity: 0px;
+
+    background: url('./images/subscribe.png') no-repeat center center;
+    /* background-size: cover; */
+  }
+
+
+  /* Add this to your CSS file or within a <style> tag */
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.5rem; /* Add padding to make space for the arrow */
+}
+
+.custom-select::after {
+  content: '▼';
+  font-size: 12px;
+  color: #999;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.box-grid{
+  -webkit-box-shadow: 9px 3px 5px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 9px 3px 5px 4px rgba(0,0,0,0.75);
+  box-shadow: 9px 3px 5px 4px rgba(0,0,0,0.75);
+border-radius: 32px 32px 32px 32px;
+-moz-border-radius: 32px 32px 32px 32px;
+-webkit-border-radius: 32px 32px 32px 32px;
+border: 1px solid #D9D9D9;
+}
+
+@media only screen and (max-width: 665px) {
+  .hide-mobile {
+    display: none;
+  }
+  .flex-mobile-footer{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 664px) {
+  .mobile-res{
+    width: 100vw;
+  }
+  .absolute-screen{
+    left: 44px;
+   }
+}
+
+@media screen and (max-width : 610px) {
+  .absolute-screen{
+    left: 14px;
+   }
+   .flex-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+}
+
+@media screen and (max-width : 1024px) {
+  .mobile-view{
+    width: 100vw !important;
+  }
+  .mobileWidth{
+    width: 80% !important;
+  }
+  .custom-arrow {
+    right: 89px;
+    color: orange !important;
+  }
+}
+
+
+@media screen and (max-width : 1263px) {
+  .career-width{
+    width: 43% !important;
+  }
+}
+
+@media screen and (max-width: 768){
+
+  .newsletter-position{
+    right: 50px;
+    left: 20px;
+  }
+  .mobile-shift{
+    right: 40px;
+    left: 40px;
+  }
+  
+}
+
+.useFlexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .subscribe-section {
+    background-color: #00274D;
+    background-image: none;
+  }
+  .newsletter-bg{
+    width: 100% !important;
+  }
+  .mobile-shift {
+    left: 10px;
+    right: auto;
+  }
+
+  .subscribe-head {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    font-size: 10px;
+    height: 10px;
+    padding: 0 10px;
+    width: 150px;
+  }
+
+  .subscribe-button {
+    height: 10px;
+    font-size: 10px;
+    padding: 0 10px;
+    width: 130px;
+  }
+  .career-hidden{
+    display: none;
+  }
+
+  .flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width : 947px){
+  .career-hidden{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .subscribe-section {
+    background-image: url("../../images/subscribe.png");
+  }
+}
+
+@media screen and (max-width: 1179px) {
+  .career-absolute-right{
+    right: 150px;
+  }
+  .career-image{
+    top: 280px;
+  }
+}
+
+
+@media screen and (min-width : 1277px) {
+  .flex-direction{
+    flex-direction: row !important; 
+  }
+}
+
+@media screen and (max-width : 1277px) {
+  .flex-direction{
+    flex-direction: column !important; 
+  }
+}
+
+@media screen and (max-width : 493px) {
+  .width-change{
+    width: 406px !important;
+  }
+}
+
+@media screen and (max-width : 520px) {
+  .change-width{
+    width: 452px !important;
+  }
+}
+
+@media screen and (min-width : 520px) {
+  .change-width{
+    width: 500px !important;
+  }
+}
+
+@media screen and (max-width : 1024px) {
+  .hide-this{
+    display: none;
+  }
+}
+
+@media screen and (max-width : 1440px) {
+  .changes_banner{
+    width: 100vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 608px;
+  }
+}
+
+@media screen and (min-width : 1440px) {
+  .changes_banner{
+    justify-content: flex-start !important;
+  }
+}

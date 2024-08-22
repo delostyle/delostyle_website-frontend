@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    overflow-x: hidden;
+} */
+
+.app{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
