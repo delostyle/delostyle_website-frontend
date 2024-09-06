@@ -29,7 +29,7 @@ const Newsletter = () => {
           <input
             type="email"
             placeholder="Your Email"
-            className="form-control w-75 p-5"
+            className="form-control w-[450px] p-5"
             style={{
               borderRadius: "25px 0 0 25px",
               backgroundColor: "rgba(238, 238, 238, 1)",
@@ -37,7 +37,8 @@ const Newsletter = () => {
               border: "1px solid #ddd",
               marginRight: "-25px",
               zIndex: 1,
-              fontSize: "20px"
+              fontSize: "20px",
+            
             }}
           />
           <button

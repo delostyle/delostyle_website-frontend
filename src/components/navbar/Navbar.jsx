@@ -84,7 +84,7 @@ const Navbar = () => {
           <div className="logoContainer">
             <img src={logo} alt="delostyle" className="logoMain" />
           </div>
-          <div className="navLinksContainer">
+          <div className="navLinksContainer" style={{position:"relative",right:"100px"}}>
             <SocialItems className="socialItems" />
             <div className="nav-Links-Container">
               <ul className=" flex justify-items-end" style={{}}>

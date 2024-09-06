@@ -99,8 +99,8 @@ export default function Process({ data, loading }) {
           </div>
         </div>
 
-        <div className={`absolute ${isWebView ? 'block' : 'hidden'} right-[10%] top-[350px]`}>
-          <img src={dottedBg} alt="dotted-bg" style={{ width: "96px", height: "400px" }} />
+        <div className={`absolute ${isWebView ? 'block' : 'hidden'} right-[10%] top-[190px] mt-24`}>
+          <img src={dottedBg} alt="dotted-bg" style={{ width: "96px", height: "300px" }} />
         </div>
 
         <img

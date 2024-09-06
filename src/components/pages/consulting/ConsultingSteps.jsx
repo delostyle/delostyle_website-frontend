@@ -18,27 +18,43 @@ const ConsultingSteps = ({ data, loading }) => {
       className="consulting-banner relative bg-blue-50 bg-center bg-no-repeat bg-cover"
       style={{ backgroundImage: `url(${banner2})`, backgroundColor: "#00274D96", marginTop: 0, paddingTop: 0 }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      {/* Adding the overlay backgrounds */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="absolute inset-0 bg-blue-900 bg-opacity-40"></div>
-      <div className="relative z-10 lg:h-[600px] md:h-[685px] h-auto flex flex-col lg:flex-row items-center justify-between text-white">
 
-        <div className="lg:w-1/2 md:w-full w-full flex flex-col items-start mb-6 lg:mb-0 p-4 h-auto justify-center">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between text-white lg:h-[600px] md:h-[685px] h-auto">
+        
+        {/* Left section */}
+        <div className="lg:w-1/2 w-full flex flex-col justify-center p-4 md:p-8 lg:p-12 relative lg:left-[50px]">
           <div className="flex items-center mb-4">
-            <img src={bulbIcon} alt="bulb-icon" className="h-8 w-8" />
-            <h2 className="text-orange-500 text-lg lg:text-xl ml-4">OUR PROCESS</h2>
+            <img src={bulbIcon} alt="bulb-icon" className="h-6 w-6 md:h-8 md:w-8" />
+            <h2 className="text-orange-500 text-sm md:text-lg lg:text-xl ml-2 md:ml-4">OUR PROCESS</h2>
           </div>
-          <div className="flex flex-col items-start">
-            <h1 className="text-white text-3xl lg:text-4xl py-3">{load ? "Steps Of Consulting" : consultingData?.headingText}</h1>
-            <p className="text-white text-base lg:text-lg py-3">{load ? "We can help you with picking the best people for your company" : consultingData?.paragraphText}</p>
-            <button className="bg-orange-500 text-white py-2 px-4 lg:py-2 lg:px-5 rounded-full text-sm lg:text-base mt-4">{load ? "Online Application" : consultingData?.buttonText}</button>
-          </div>
+          <h1 className="text-white text-2xl md:text-3xl lg:text-5xl font-bold mb-2 md:mb-3">
+            {load ? "Steps Of Consulting" : consultingData?.headingText}
+          </h1>
+          <p className="text-white text-sm md:text-base lg:text-lg mb-4 md:mb-6">
+            {load ? "We can help you with picking the best people for your company" : consultingData?.paragraphText}
+          </p>
+          <button className="bg-orange-500 text-white py-2 px-4 md:px-5 rounded-2xl text-xs md:text-sm lg:text-base w-full md:w-72 text-center">
+            {load ? "Online Application" : consultingData?.buttonText}
+          </button>
         </div>
 
-        <div className="flex bg-opacity-50 md:w-full w-full rounded-lg items-center justify-center xl:justify-between h-auto xl:w-[768px]" style={{ backgroundColor: "#FFFFED9C" }}>
-          <div className="hidden w-[50px] lg:flex lg:items-center lg:justify-end">
-            <img src={bannerDots} alt='dotted-bg' className="h-12 w-12" />
+        {/* Right section (Stepper + background) */}
+        <div className="relative lg:w-1/2 w-full flex justify-center lg:justify-end items-center p-4 lg:pr-12 lg:left-[50px]">
+          <div className="bg-white bg-opacity-80 p-4 md:p-8 rounded-lg shadow-lg w-full max-w-[1200px] h-auto lg:h-[450px]">
+            {/* Banner dots */}
+            <div className="relative">
+              <div className="absolute top-0 left-0 lg:block hidden">
+                <img src={bannerDots} alt="dotted-bg" className="h-[260px] w-[100px]" />
+              </div>
+              {/* Stepper Component */}
+              <div className="relative lg:left-[100px] left-0">
+                <Stepper />
+              </div>
+            </div>
           </div>
-          <Stepper />
         </div>
       </div>
     </div>

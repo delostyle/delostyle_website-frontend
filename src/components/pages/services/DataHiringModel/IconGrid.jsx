@@ -25,7 +25,7 @@ const IconGrid = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center items-center mx-2 p-5" style={{ marginLeft: "-20px" }}>
+    <div className="flex flex-wrap justify-center items-center mx-2 p-5" style={{ marginLeft: "28px" }}>
       {items.map((item, index) => (
         <div key={index} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 p-2">
           <div className="flex flex-col items-center w-[300px] h-[200px] justify-center rounded-lg overflow-hidden shadow-lg bg-white p-4">

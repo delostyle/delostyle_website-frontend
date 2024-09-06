@@ -38,6 +38,8 @@ export default function PbmSolution({ data, loading }) {
           />
 
         <div className="flex flex-col mt-10">
+          <div>
+
           <div className="flex items-center mb-5">
             <img
               src={bulbIcon}
@@ -61,6 +63,7 @@ export default function PbmSolution({ data, loading }) {
             >
               {load ? "PBM Solutions for Your Company, Customized IT Consulting Services" : pbmSolutionData?.mainHeading}
             </p>
+          </div>
           </div>
 
           {/* Description */}

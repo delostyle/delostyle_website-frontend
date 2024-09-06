@@ -75,21 +75,21 @@ const SocialUpdates = () => {
     const feedbackData = [
         {
             id: 1,
-            description: 'Take your business to the next level with Delostyle...Read Moreasd/asdnklasdklasdhnlkashdlhaslkhdlahlasdlksahdlashdlhsdlh',
+            description: 'Take your business to the next level with Delostyle...Read More',
             imageUrl: up1,
             media: facebook,
             date: "27 June 2024"
         },
         {
             id: 2,
-            description: 'The cats out of the bag! Who knew a tiny could asdhnlkasdjasl;jd;aljsd;asjdasj;asjdk;asd;alsd;asd;asdj;asldj;asljd;asd',
+            description: 'Take your business to the next level with Delostyle...Read More',
             imageUrl: up2,
             media: facebook,
             date: "25 June 2024"
         },
         {
             id: 3,
-            description: 'Level up your business strategy with DelostyleStudiod;asjld;alsjd;asjd;asjd;asdj;asljd;lasjd;asjd;asjd;sajd;sj;ldjas;djlas',
+            description: 'Level up your business strategy with DelostyleStudiod;asjld;alsjd;1234566',
             imageUrl: up3,
             media: facebook,
             date: "22 June 2024"
@@ -155,17 +155,17 @@ const SocialUpdates = () => {
                             <div className="px-6 py-4 flex flex-col h-full">
                                 <img className="w-full" src={feedback.imageUrl} alt="Feedback" style={{ height: "150px", objectFit: "cover" }} />
                                 <div className="mt-2 flex-grow">
-                                    <p className="text-gray-700 text-base whitespace-normal w-[260px] h-[40px]">
-                                        {expandedId === feedback.id ? full : truncated}
-                                        {full.length > truncated.length && (
-                                            <span 
-                                                style={{ color: 'blue', cursor: 'pointer' }} 
-                                                onClick={() => setExpandedId(expandedId === feedback.id ? null : feedback.id)}
-                                            >
-                                                {expandedId === feedback.id ? ' show less' : 'read more'}
-                                            </span>
-                                        )}
-                                    </p>
+                                <p className="text-gray-700 text-base whitespace-normal w-full h-auto break-words">
+    {expandedId === feedback.id ? full : truncated}
+    {full.length > truncated.length && (
+        <span 
+            style={{ color: 'blue', cursor: 'pointer' }} 
+            onClick={() => setExpandedId(expandedId === feedback.id ? null : feedback.id)}
+        >
+            {expandedId === feedback.id ? ' show less' : 'read more'}
+        </span>
+    )}
+</p>
                                 </div>
                             </div>
                             <hr />

@@ -39,6 +39,7 @@ export default function DhmSolution({data,loading}) {
           />
 
         <div className="flex flex-col mt-10">
+        <div className="dhm">
           <div className="flex items-center mb-5">
             <img
               src={bulbIcon}
@@ -55,7 +56,7 @@ export default function DhmSolution({data,loading}) {
           </div>
 
           {/* Main Heading */}
-          <div className="w-[72%]">
+          <div className="dhm w-[72%]">
             <p
               className="font-bold mb-5"
               style={{ fontSize: "36px", lineHeight: "1.2", maxWidth: "100%" }}
@@ -63,6 +64,7 @@ export default function DhmSolution({data,loading}) {
               {load ?  "DHM Solutions For Your Company, Tailored IT Consulting Services" : servicesHiringData?.mainHeading}
             </p>
           </div>
+        </div>
 
           {/* Description */}
           <div className="w-full lg:w-2/3 mb-5">

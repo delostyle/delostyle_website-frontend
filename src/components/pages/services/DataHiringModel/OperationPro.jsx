@@ -17,20 +17,26 @@ export default function OperationalPro({ data, loading }) {
   return (
     <div className="flex flex-col lg:flex-row mt-10" style={{ overflow: "hidden" }}>
       
+      {/* Side Border for large screens */}
       <div className="hidden lg:block lg:w-[520px] h-full mt-5">
         <img src={sideBorder} alt="side-border" className="h-full" />
       </div>
 
+      {/* Main content area */}
       <div className="relative flex flex-col mb-2 p-5 lg:p-10 mx-5 lg:mx-10 mt-10">
         
+        {/* Blog border image on left */}
         <img 
-            src={blogBorder} 
-            alt="blog-border-left" 
-            className="absolute left-0 top-0" 
-            style={{ width: "248px", height: "213px" }} 
-          />
+          src={blogBorder} 
+          alt="blog-border-left" 
+          className="absolute left-0 top-0" 
+          style={{ width: "248px", height: "213px" }} 
+        />
 
+        {/* Content starts here */}
         <div className="flex flex-col mt-10">
+          {/* Heading with Icon */}
+          <div>
           <div className="flex items-center mb-5">
             <img
               src={bulbIcon}
@@ -55,6 +61,8 @@ export default function OperationalPro({ data, loading }) {
               {load ? "DHM Help Brands Adapt And Thrive In The Professional World" : operationalProData?.mainHeading}
             </p>
           </div>
+          
+          </div>
 
           {/* Description */}
           <div className="w-full lg:w-2/3 mb-5">
@@ -70,10 +78,12 @@ export default function OperationalPro({ data, loading }) {
           </div>
         </div>
 
+        {/* Dotted background image for large screens */}
         <div className="absolute hidden lg:block right-[10%] top-[190px]">
           <img src={dottedBg} alt="dotted-bg" style={{ width: "96px", height: "300px" }} />
         </div>
 
+        {/* Horizontal divider */}
         <div className="w-full flex items-center justify-start">
           <hr
             className="border-dashed border-2 opacity-20 mx-0"
@@ -88,7 +98,7 @@ export default function OperationalPro({ data, loading }) {
           style={{ 
             width: "248px", 
             height: "213px",
-            bottom: "5px"
+            bottom: "5px"  // Default for large screens
           }}
         />
       </div>

@@ -31,6 +31,7 @@ export default function PbmOperation({ data, loading }) {
           />
 
         <div className="flex flex-col mt-10">
+        <div>
           <div className="flex items-center mb-5">
             <img
               src={bulbIcon}
@@ -46,7 +47,6 @@ export default function PbmOperation({ data, loading }) {
             </h2>
           </div>
 
-          {/* Main Heading */}
           <div className="w-[72%]">
             <p
               className="font-bold mb-5"
@@ -55,6 +55,7 @@ export default function PbmOperation({ data, loading }) {
               {load ? "PBM Help Brands Adapt And Thrive In The Professional World" : pbmOperationData?.mainHeading}
             </p>
           </div>
+        </div>
 
           {/* Description */}
           <div className="w-full lg:w-2/3 mb-5">
